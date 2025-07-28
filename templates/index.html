@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Combo Cleaner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Combo Cleaner Tool</h2>
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <label>Select Combo File (.txt):</label><br>
+      <input type="file" name="combo" accept=".txt" required><br><br>
+
+      <label>Output File Name (no .txt):</label><br>
+      <input type="text" name="output_name" placeholder="example" required><br><br>
+
+      <button type="submit">Clean & Download</button>
+    </form>
+  </div>
+</body>
+</html>
